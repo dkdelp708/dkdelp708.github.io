@@ -14,7 +14,7 @@ var incorrectResponses = ["Sorry, wrong answer. You must not have tuned into Spo
 						  "You definitely have some work to do if you do not know that Kobe Bryant is retiring this year",
 						   "Hey now, you can never forget records when it comes to the NBA"];
 
-var imageArray = ["./Images/LBJ.jpeg", "./Images/Kobe.jpeg", "Images/95Bulls.jpg"];
+var imageArray = ["./Images/LBJ.jpeg", "./Images/Kobe.jpeg", "./Images/95Bulls.jpg"];
 
 for (var i =0; i <questions.length; i ++) {
 	var guess = prompt(questions[i]);
@@ -22,7 +22,7 @@ for (var i =0; i <questions.length; i ++) {
 		alert(correctResponses[i]);
 		var el = document.getElementById("img"+i);
 		console.log(el);
-		el.innerHTML = '<img src="' + imageArray[i] + '" />';
+		el.innerHTML = '<img src="' + imageArray[i] + '" width = "200" height = "200" />';
 	}
 	else {
 		alert(incorrectResponses[i]);
