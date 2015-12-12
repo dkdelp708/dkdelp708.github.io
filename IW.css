@@ -1,0 +1,93 @@
+h1 {
+	color : orange;
+	border: solid;
+	font-size: 42pt;
+	font-style: oblique;
+	background-color: black;
+}
+		
+h2 {
+	color : blue;
+	border: dashed;
+	font-size: 30pt;
+	font-style: oblique;
+	background-color: black;
+}
+
+p {
+	color: orange;
+	font-family: cursive;
+	font-style: oblique;
+	font-size: 18pt;
+}
+
+p.biography {
+	color: brown;
+	font-family: optima;
+	font-style: oblique;
+	font-size: 36px;
+}
+p.hobbies {
+
+	color: orange;
+	font-family: Verdana;
+	font-size: 28px;
+}
+
+ul {
+	color: red;
+	font-family: Optima;
+	font-size: 16px;
+	border: 10px dotted black;
+}
+
+li {
+	color: orange;
+	font-family: Verdana;
+	font-size: 16px;
+}
+
+		
+li {
+	font-family: cursive;
+}
+
+a.header {
+	color: red;
+	font-family: sans;
+	font-style: oblique;
+	font-size: 30pt;
+	padding-right: 1em;
+	margin-left: 8px;
+	text-align: center;
+}
+
+a.header:hover { 
+	color: purple;
+	outline: dotted; 
+}
+
+.navheader {
+	display: flex;
+	flex-direction: row;
+	background-color: black;
+	border: 15px solid teal;
+}
+
+.navItem {
+	color: red;
+	font-style: oblique;
+	font-size: 36px;
+	font-weight: bold;
+	display: inline-block;	
+	margin-left: auto;
+	text-decoration: underline;
+	background-color: teal;
+	border-radius: 100%;
+	border: 10px solid orange;
+	padding-left: 5px;
+}
+.navItem:hover {
+	color: gold;
+	outline: dotted;
+}
