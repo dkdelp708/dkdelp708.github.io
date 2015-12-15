@@ -3,27 +3,22 @@
 <head> 
 	<title> Seattle Outdoor Adventure </title>
 	<script> 
-	alert("Push the button below and begin creating your own Seattle Adventure");
+	alert("Below you see my Seattle Adventure, push the button below and begin creating your own Seattle Adventure");
 	</script>
 	<link rel = "stylesheet" type = "text/css" href = "IW.css">
 </head>
 <body>
 	<h1> Create your own Seattle Outdoor Adventure </h1>
-	<br>
-	<h2> <button type = 'button'> Begin Adventure </button> </h2>
-
-	<br>
-	<p> It was Saturday morning and it was beautiful out. I awoke living in the <ins id = 'neighborhood'> Queen Anne </ins> neighborhood and decided to get a coffee at <ins id = 'coffeeShop'> Uptown Espresso </ins>. My favorite coffee drink is <ins id = 'favoriteCoffee'> Peppermint Mocha </ins>. Afterwards, I walked up to <ins id = 'favoritePark'> Kerry Park </ins> and <ins id = 'parkActivity'> take a look at beautiful Seattle </ins>
-
-
-
-
-
-
-
+	<h3> <button onclick = "SeattleAdventure()"> Begin Adventure </button> </h3>
+	<h4> 
+		<p> It was Saturday morning and it was beautiful out. I awoke living in the <ins id = 'neighborhood'> Queen Anne </ins> neighborhood and decided to get a coffee at <ins id = 'coffeeShop'> Uptown Espresso </ins>. My favorite coffee drink is <ins id = 'favoriteCoffee'> Peppermint Mocha </ins>. Afterwards, I walked to <ins id = 'favoritePark'> Kerry Park </ins> and <ins id = 'parkActivity'> relaxed infront of the beautiful Seattle skyline </ins>. </p>
+		<p class = "lunch"> After awhile I began to get hungry, and because it was so nice out I decided a picnic would be a great idea. I went to the grocery store and purchased <ins id = 'picnicItems'> apples, cucumbers, gardettos, a naked juice, and some Elysian IPAs </ins>. I also thought to myself why have a picnic by myself? I called <ins id = 'picnicFriends'> my friends Andy, Nate, Tyler, Kyle, Kristen, and Marianna </ins> to come join. We ate some food, drank some beer and decided to play <ins id = 'picnicActivity'> Frisbee </ins>.
+		</p>
+		<p class = 'dinner'> We had a blast and time flew by and it was about <ins id = 'leftParkTime'> 5:00pm </ins> and we all decided to go to our favorite local bar <ins id = 'favoriteLocalBar'> Red Papaya </ins>. I ordered <ins id = 'dinnerMeal'> the beef Pho with extra meat, and I put lots of hot sauce in mine </ins>. After dinner, we decided to go dancing at <ins id = 'danceClub'> The Foundation Nightclub </ins>. We danced the night away, and had a blast. Eventually, I called it a night at 3:00 AM. What a fun day that was! </p>
+	</h4>
 
 <script>
-
+function SeattleAdventure () {
 var neighborhood = prompt('What neighborhood in Seattle do you live in?');document.getElementById('neighborhood').innerHTML = neighborhood;
 
 var coffeeShop = prompt('Where is your favorite morning coffee shop in your neighborhood?');
@@ -32,18 +27,35 @@ var coffeeShop = prompt('Where is your favorite morning coffee shop in your neig
 var favoriteCoffee = prompt('What is your favorite Coffee Drink?');
 	document.getElementById('favoriteCoffee').innerHTML = favoriteCoffee;
 
-var favoritePark = prompt('What is your favorite Park?');
+var favoritePark = prompt('What is your favorite Park to go to?');
 	document.getElementById('favoritePark').innerHTML = favoritePark;
 
 var parkActivity = prompt('What do you like to do when you visit your favorite park?');
 	document.getElementById('parkActivity').innerHTML = parkActivity;
 
+var picnicItems = prompt('What items do you want to purchase from the store for your picnic?');
+	document.getElementById('picnicItems').innerHTML = picnicItems;
+
+var picnicFriends = prompt('Who do you want to call to come to your picnic?');
+	document.getElementById('picnicFriends').innerHTML = picnicFriends;
+
+var picnicActivity = prompt('What activity do you want to do at your picnic?');
+	document.getElementById('picnicActivity').innerHTML = picnicActivity;
+
+var leftParkTime = prompt('What time did you leave the park?');
+	document.getElementById('leftParkTime').innerHTML = leftParkTime;
+
+var favoriteLocalBar = prompt('What is your favorite local bar to go to with friends?!');
+	document.getElementById('favoriteLocalBar').innerHTML = favoriteLocalBar;
+var dinnerMeal = prompt('What did you have for dinner at your favorite bar?');
+	document.getElementById('dinnerMeal').innerHTML = dinnerMeal;
+
+var danceClub = prompt('Where do you want to go dancing?');
+	document.getElementById('danceclub').innerHTML = danceClub;
+}
+
 </script>
 
-
-
-
-
-
+<a href = "index.html" class = "navItem"> Return to Test your Might </a>
 </body>
 </html>
